@@ -7,6 +7,7 @@ import {
   RiDownloadLine,
 } from 'react-icons/ri';
 import { HiOutlinePhone, HiOutlineAtSymbol } from 'react-icons/hi2';
+import PDF from '../assets/cv/CV-AblaMalki.pdf';
 
 const Header = () => (
   <header className="relative max-w-5xl mx-auto grid gap-y-8 p-5 pt-14 md:px-32">
@@ -73,7 +74,8 @@ const Header = () => (
     <div className="flex items-center justify-center gap-4 flex-col md:flex-row">
       <a
         download=""
-        href="/cv/CV-AblaMalki.pdf"
+        href={PDF}
+        target="_blank"
         className="inline-flex items-center gap-2 bg-primary font-abla font-medium text-base text-white
         px-6 py-[1.15rem] rounded-lg transition duration-300 shadow-shade hover:bg-primaryAlt"
       >
